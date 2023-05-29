@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+       select, textarea {
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <!--Os dados não serão eniados pois não temos um script rodando em um servidor-->
+    <form action="destinatario.php" autocomplete="on">
+        <h1>Login</h1>
+        <label for="ie-mail">E-mail:</label>
+        <input type="email" name="e-mail" id="ie-mail" maxlength="30" required placeholder="seu e-mail"><br>
+        <label for="isenha">Senha:</label>
+        <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="20"><br>
+        <input type="submit" value="Logar">
+        <input type="reset" value="Apagar dados">
+    </form>    
+        <from action="destinatario.php" autocomplete="on">
+            <h1 id="form2">Cadastre-se</h1>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="nome de nome" required><br>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" placeholder="seu sobrenome" required><br>
+            <h2 id="sexo">Sexo</h2>
+            <input type="radio" name="sexo" id="isexo">Masculino
+            <input type="radio" name="sexo" id="isexo">Feminino<br>
+            <h2 id="interesses">Seus interesses</h2>
+            <input type="checkbox" name="intere
+            " id="interesses">Futebol
+            <input type="checkbox" name="intere
+            " id="interesses">Vôlei
+            <input type="checkbox" name="intere
+            " id="interesses">Apostas
+            <h2 id="estado">Em que estado você mora?</h2>
+            <select name="estados" id="iestados">
+                <option value="São Paulo">SP</option>
+                <option value="Rio de janeiro">RJ</option>
+                <option value="Tocantins">TO</option>
+            </select><br>
+            <h2 id="observaçoes">Observações</h2>
+            <textarea name="observaçoes" id="iobservaçoes" cols="30" rows="15"></textarea>
+            <br>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Apagar dados">
+        </from>
+        <!--exercicio de teste completo(sei que já vimos isso mas é sempre bom revisar conteúdo)-->
+</html>
