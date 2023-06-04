@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-span</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        header {
+          background-image: linear-gradient(90deg, yellow, white);
+          margin: 0px;
+        }
+
+        .amarelo {
+            background-color: yellowgreen;
+            width: 150px;
+        }
+
+        #branco {
+            background-color: white;
+            width: 150px;
+        }
+    </style>
+</head>
+<!--Sempre usar ids para formatalões de caixas únicas e pontuais-->
+<!--Sempre usar class para mais de uma caixa com as mesmas caracteristicas-->
+<!--DIV é uma caixa do tipo inline block(cobre todop o posicionamento lateral da caixa conteiner)-->
+<!--SPAN é do tipo inline ou seja só´cobre a área com conteúdo pré-definido-->
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagem/logo-mercadolivre.png" alt="mercadolivre" width="20%">
+        </div>
+       <div id="menu">
+        <ul>
+            <li class="amarelo">home</li>
+            <li class="amarelo">produtos</li>
+            <li id="branco">fale conosco</li>
+        </ul>
+       </div>
+    </header>
+    <p>A maioria do <span>sites</span> profissionais são escritos desta maneira usando ids/classes para tags sendo selecionadas por seletores em css.</p>
+    <!--Usamos a span para formatação de determinados textos por ser do tipo inline e não interferir na estrutura do conteudo do site-->
+</body>
+</html>
