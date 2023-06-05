@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de formatação</title>
+    <style>
+        div#conteiner {
+            font-size: 20px;
+        }
+
+        #conteiner > #primario {
+            font-size: 2em;
+        }
+
+        #conteiner > #secundario {
+            font-size: 50px;
+        }
+
+        /*Perceba que a unidade fixa se mantém enquanto a relativa é tem seu valor sobreposto aoo valor de seu conteiner pai.*/
+    </style>
+</head>
+<body>
+    <!--Pixels(px) são uma medida fixa e absoluta em relação a ela mesma e qualquer conteiner-->
+    <!--Porcentagem(%) é relativa aos 16px padrão definidos pelos navegadores-->
+    <!--Em(em) é uma unidade de medida muito usada e é relativa pelo conteiner pai, ou seja se meu conteiner pai possuí um font-size de 60px... Meu seletor filho será relativo a essa medida estabelecida -->
+
+    <div id="conteiner">
+        <h1 id="primario">
+            Formatações de textos
+        </h1>
+        <h2 id="secundario">
+            Tipos de formatações
+        </h2>
+    </div>
+</body>
+</html>
