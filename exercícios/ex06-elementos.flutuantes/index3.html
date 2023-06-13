@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flutuantes na prática</title>
+    <style>
+        #principal {
+            width: 920px;
+            padding: 5px;
+        }
+
+        .noticia {
+            float: left;
+            width: 280px;
+            margin: 8px;
+            background-color: #9595955c;
+            padding: 5px;
+        }
+
+        #principal > .clear {
+            clear: both;
+        }
+
+        #principal > #galeria > .galeria-imagem {
+            float: left;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div class="noticia">
+            <h1>
+                lorem ipsum dolor sit amet 1
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellat maiores itaque iusto ipsam ea, eaque dolorum suscipit reprehenderit consectetur quod laudantium officia harum sint aut autem amet natus quibusdam?
+            </p>
+            <a href="#">Veja mais</a>
+        </div>
+        <div class="noticia">
+            <h1>
+                lorem ipsum dolor sit amet 2
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellat maiores itaque iusto ipsam ea, eaque dolorum suscipit reprehenderit consectetur quod laudantium officia harum sint aut autem amet natus quibusdam?
+            </p>
+            <a href="#">Veja mais</a>
+        </div>
+        <div class="noticia">
+            <h1>
+                lorem ipsum dolor sit amet 3
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repellat maiores itaque iusto ipsam ea, eaque dolorum suscipit reprehenderit consectetur quod laudantium officia harum sint aut autem amet natus quibusdam?
+            </p>
+            <a href="#">Veja mais</a>
+        </div>
+        <div class="clear"></div>
+        <div id="galeria">
+            <div class="galeria-imagem">
+                <img src="imagens/imagem1.png" alt="Solado ajudando crianças">
+                <p>
+                    Crianças com soldado americano
+                </p>
+            </div>
+            <div class="galeria-imagem">
+                <img src="imagens/imagem2.png" alt="Solado ajudando crianças">
+                <p>
+                    Pessoa observando
+                </p>
+            </div>
+            <div class="galeria-imagem">
+                <img src="imagens/imagem3.png" alt="Solado ajudando crianças">
+                <p>
+                    Homem jogando dama
+                </p>
+            </div>
+            <div class="galeria-imagem">
+                <img src="imagens/imagem4.png" alt="Solado ajudando crianças">
+                <p>
+                    Crianças posandp
+                </p>
+            </div>
+            <div class="galeria-imagem">
+                <img src="imagens/imagem5.png" alt="Solado ajudando crianças">
+                <p>
+                    Fotografando o ambiente
+                </p>
+            </div> 
+            <div class="clear"></div>
+        </div><!--fim da galeria-->
+    </div><!--fim da principal-->
+    <!--Exemplo de elememntos flitiantes na prática feito e totalmente funcional-->
+</body>
+</html>
