@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+div {
+    color: #fff;
+    background-color: blue;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+div#diferente {
+    float: right;
+    background-color: red;
+}
+
+/*
+   A propriedade clear é usada para não deixar que o conteúdos saiam de ordem por causa dos elementos flutuantes. E não deixa nenhuma caixa se posicionar na direção do valor proposto na propriedade float.
+   Por exemplo: Se houver um clear com valor right, as caixas não poderam se posicionar a direita desta caixa.
+*/
+
+p {
+    clear: right;
+}
