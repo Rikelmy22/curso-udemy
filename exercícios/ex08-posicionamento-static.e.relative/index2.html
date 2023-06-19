@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento - ABSOLUTE  e  FIXED</title>
+    <style>
+
+        body {
+            background-color: lightblue;
+        }
+
+        #conteiner {
+            background-color: #fff;
+            position: relative;
+        }
+        
+        .absolute {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+        }
+
+        p {
+            width: 300px;
+            margin: 0px;
+        }
+
+        #fixed {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+ </head>
+ <body>
+    <!--O posicionamento absolute é definido por uma caixa com um conteiner pai, cujo posicionamento é indiferente em relação ao static. Ou seja, se o conteiner pai tiver definido como padrão e usar ás propriedades de deslocamento no elemento que estiver fora do fluxo o seletor irá utilizar as medidas do body como referência para o novo fluxo.-->
+    <!--O posicionamento fixed cria um fluxo tomando como referência as medias da viewport e seu fluxo não respeita o scroll do navegador.-->
+
+    <div id="conteiner">
+        <p class="absolute">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p> <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolor laborum. Qui, voluptatem animi cumque expedita praesentium rerum omnis accusamus alias? Aliquam veritatis consectetur odit aspernatur voluptas, odio nihil ad?
+        </p>
+        <p id="fixed">
+          <textarea name="box" id="ibox" cols="30" rows="5">Eu sou...</textarea>
+        </p>
+    </div>
+ </body>
+ </html>
