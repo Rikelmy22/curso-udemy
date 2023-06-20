@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de links</title>
+    <style>
+       /*Existem quatro tipos de estados para os serem atribuídos aos links, sendo eles: LINK, VISITED, HOVER E ACTIVE<--pseudo-classes*/
+       /*Link é o definido como padrão pois é quando os usuários ainda não acessaram a página destinada*/
+       /*Visited é definido para links em que o usuário ja teve acesso a página*/
+       /*Hover quando o cursor passa sobre o link e efetua configurações definidas nos códigos*/
+       /*Active é quando o usuário clica sobre o link e o mesmo efetua configurações definidas nos códigos*/
+       
+       a:link, a:visited {
+        color: blue;
+        text-decoration: none;
+        padding: 5px;
+        background-color: lightblue;
+       }
+
+       a:hover {
+        padding: 7px;
+        background-color: blue;
+        color: lightblue;
+        transition-duration: 0.5s;transition-timing-function: ease;
+       }
+
+       a:active {
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <!--Início do conteúdo de exemplo-->
+    <a href="https://www.w3schools.com">w3schools</a>|
+    <a href="https://www.dkz.com">dkz</a>|
+    <a href="https://www.facebook.com">Facebook</a>
+    <!--Fim do conteúdo de exemoplo-->
+</body>
+</html>
