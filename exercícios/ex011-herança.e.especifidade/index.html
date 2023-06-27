@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança e especifidade</title>
+
+    <style>
+        /* *** Exemplo de Herança *** */
+       Body {
+        background-color: #ccc;
+        color: #0000ff;
+       }
+        /* *** Exemplo de Epecifidade *** */
+       h1 {
+        color: #aaa;
+       }
+
+       h2 {
+        color: #ff0000;
+       }
+       
+       h2 {
+        color: #000;
+       }
+
+       /* *** Quando é criado dois seletores iguais, apenas o último é aceito pelo navegador e o outro se torna absoleto. A única excessão é quando se usa o texto !IMPORTANT no seletor anterior e esse será formatado. *** */
+    </style>
+
+</head>
+<body>
+    <h1>Herança e especifidade</h1>
+    <h2>Herança</h2>
+    <p>
+        Herança é definida por um seletores filhos que absorvem ás propriedades definidas no seletor pai.
+        <!-- Por exemplo se o body receber uma propriedade font-size todos os elementos dentro do body receberam essa propriedade -->
+        <!-- O exemplo que é sempre usado nos arquivos css é o * que reseta por completo todos os itens no arquivo. -->
+    </p>
+    <h2>Especifidade</h2>
+    <p>
+        Especifidade é quando um elemento é mais especifico que outro e recebe as configurações como primárias.
+        <!-- Quanto mais especifico for o elemento maior será sua precedência no arquivo. Ou seja, o elemneto será aplicado antes dos demais. A única excessão é quando um elemento possuir o texto !IMPORTANT no CSS assim o arquivo obedecerá esse seletor com esse atributo de texto. -->
+    </p>
+</body>
+</html>
