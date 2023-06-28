@@ -1,0 +1,36 @@
+body {
+    background-color: #ccc;
+}
+
+/* *** Início das configurações do menu vertical *** */
+.menu-vertical > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.menu-vertical > ul > li {
+    background: url(../imagens/menu.png) no-repeat left;
+    width: 160px;
+    padding: 11px 20px;
+}
+
+.menu-vertical > ul > li:hover {
+    background: url(../imagens/menu.png) no-repeat right center;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.menu-vertical > ul > li > a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+    display: block;
+}
+
+.menu-vertical > ul > li > a:hover {
+    color: #fff;
+}
+
+/* *** Fim das configurações do menu de navegação vertical *** */
