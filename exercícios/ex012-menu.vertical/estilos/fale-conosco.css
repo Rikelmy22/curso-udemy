@@ -30,7 +30,7 @@ body {
     display: block;
 }
 
-#home > .menu-vertical > ul > li > a:hover, .selecionado a {
+#mais-sobre-nos > .menu-vertical > ul > li > a:hover, .selecionado a {
     background: url(../imagens/menu.png) no-repeat right center !important;
 }
 
