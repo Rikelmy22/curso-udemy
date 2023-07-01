@@ -1,0 +1,49 @@
+* {
+    font-family: sans-serif;
+}
+
+ul.navegacao {
+    margin: 0px;
+    padding: 0px;
+    width: 720px;
+    list-style-type: none; 
+    background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x ;
+    border-radius: 3px; 
+
+    float: left;
+}
+
+ul.navegacao > li {
+    border-radius: 5px;
+    background: url(../imagens/divisor.png) repeat-y;
+    cursor: pointer;
+    float: left;
+}
+
+ul.navegacao > li.none {
+    background-color: none;
+}
+
+ul.navegacao > li > a:link, a:visited{
+    color: #fff;
+    text-decoration: none;
+    line-height: 2.2em;
+    padding: 0px 2em;
+    display: block;
+}
+
+ul.navegacao > li > a:hover {
+    background-color: #21d4f0;
+    transition-duration: 0.4s;
+    color: #000;
+}
+
+#index > ul.navegacao > li#index > a,
+#fale-conosco > ul.navegacao> li#fale-conosco > a,
+#mais-sobre-nos > ul.navegacao > li#mais-sobre-nos > a,
+#contato > ul.navegacao > li#contato > a
+ {
+    background-color: #21d4f0;
+    transition-duration: 0.4s;
+    color: #000;
+}

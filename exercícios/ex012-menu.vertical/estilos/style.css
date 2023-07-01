@@ -1,5 +1,6 @@
 body {
     background-color: #ccc;
+    font-family: sans-serif;
 }
 
 /* *** Início das configurações do menu vertical *** */
@@ -26,12 +27,15 @@ body {
     padding-left: 20px;
     text-decoration: none;
     color: #000;
-    font-family: sans-serif;
     display: block;
 }
 
-#home > .menu-vertical > ul > li > a:hover, .selecionado a {
-    background: url(../imagens/menu.png) no-repeat right center !important;
+#home > .menu-vertical > ul#selecionado > li#index > a,
+#fale-conosco > .menu-vertical > ul#selecionado > li#fale-conosco > a,
+#mais-sobre-nos > .menu-vertical > ul#selecionado > li#mais-sobre-nos > a,
+#contato > .menu-vertical > ul#selecionado > li#contato > a
+ {
+    background: #f99200 url(../imagens/menu.png) no-repeat right center !important;
 }
 
 /* *** Fim das configurações do menu de navegação vertical *** */
