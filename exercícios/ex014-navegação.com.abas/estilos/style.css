@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    font-family: sans-serif;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul > li {
+    display: block;
+    list-style-type: none;
+    float: left;
+}
+
+ul > li > a:link, a:visited {
+    padding: 10px;
+    background-color: #f7a711;
+    color: #000;
+    border: 1px solid red;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
