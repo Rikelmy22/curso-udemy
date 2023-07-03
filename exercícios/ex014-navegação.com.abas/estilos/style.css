@@ -5,8 +5,9 @@
 }
 
 ul {
-    margin: 0px;
+    margin: 30px 0px;
     padding: 0px;
+    font-size: 1.1em;
 }
 
 ul > li {
@@ -16,11 +17,31 @@ ul > li {
 }
 
 ul > li > a:link, a:visited {
-    padding: 10px;
+    padding: 20px;
     background-color: #f7a711;
-    color: #000;
-    border: 1px solid red;
+    color: #fff;
+    border: 1px solid #00000036;
     text-decoration: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    line-height: 2.5em;
+}
+
+ul > li > a:hover {
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+#index > #menu > .selecionado > #home,
+#fale > #menu > .selecionado > #fale-conosco, 
+#sobre-nos > #menu > .selecionado > #mais-sobre-nos, 
+#cont > #menu > .selecionado > #contato
+{
+    background-color:  rgb(255, 234, 0);
+    border:1px solid rgba(211, 211, 211, 0.823);
+}
+
+div#descricao {
+    float: left;
+    margin: 20px 0px;
 }
