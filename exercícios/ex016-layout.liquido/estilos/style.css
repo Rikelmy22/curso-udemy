@@ -9,7 +9,9 @@ body {
 }
 
 #container {
-    width: 720px;
+    width: 85%;
+    min-width: 600px;
+    max-width: 9800px;
     background-color: #fff;
     margin: 0px auto;
 }
@@ -22,7 +24,7 @@ body {
 }
 
 #container > #navegacao {
-    width: 180px;
+    width: 25%; /*180px é equivalente a 25% na regra de 3 em relação ao tamanho do container pai  que tem uma width de 700px*/
     height: 220px;
     background-color: #ccc;
     float: left;
@@ -43,16 +45,17 @@ body {
 }
 
 #container > #conteudo > #conteudo-primario {
-    padding: 20px;
+    padding: 20px 0px 0px 20px;
     float: left;
-    width: 280px;
+    width: 40%;/*280px equivalente a 40% em relação aos 700px do container pai*/
 }
 
 #container > #conteudo > #conteudo-secundario {
     padding: 20px;
     float: right;
-    width: 160px;
+    width: 22%;/*160px é equivalente a 22% em relação aos 700px do conteiner pai*/
     background-color: #dedede;
+    margin-bottom: 10px;
 }
 
 #rodape {
@@ -66,4 +69,5 @@ body {
 #rodape > p {
     padding-left: 5px;
 }
+
 
