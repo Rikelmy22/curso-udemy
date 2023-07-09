@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body, html {
+    font-size: 80,5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#formulario {
+    width: 600px;
+}
+
+fieldset {
+    margin: 2em 0;
+    border: 1px solid #ccc;
+}
+
+fieldset > legend {
+    font-size: 1.6em;
+}
+
+input, textarea {
+    display: block;
+    width: 20em;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+input[type=submit], [type=reset] {
+    padding: 1.3em;
+    background-color: lightskyblue;
+    margin: 0.3em 0;
+}

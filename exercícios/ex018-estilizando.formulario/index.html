@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="formulario" action="destinatario.php" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="iname">Nome:</label>
+            <input type="text" name="nome" id="inome" required minlength="10"  placeholder="seu nome">
+            <label for="ie-mail">E-mail:</label>
+            <input type="email" name="e-mail"id="ie-mail" required minlength="15"placeholder="seu e-mail">
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha"id="isenha" required maxlength="10"placeholder="sua senha">
+        </fieldset>
+        <fieldset>
+            <legend>Comentários</legend>
+            <label for="itexto">Mensagem:</label>
+            <textarea name="texto" id="itexto" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Lembrar de mim?</legend>
+            <label for="i-sim">Sim</label>
+            <input type="radio" name="radio" id="i-sim">
+            <label for="i-nao">Não</label>
+            <input type="radio" name="radio" id="i-nao">
+        </fieldset>
+        <input type="submit" value="Enviar dados">
+        <input type="reset" value="Deletar dados">
+    </form>
+</body>
+
+</html>
