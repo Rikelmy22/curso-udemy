@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando formulário - Oficial </title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <main id="container">
+        <div id="imagem">
+            <img src="imagens/perfil.png" alt="">
+        </div>
+        <!-- Início do formulário -->
+        <form id="formulario" action="destinatario.php" method="post" autocomplete="on">
+            <div>
+                <label for="ie-mail">
+                    <img src="" alt="">
+                </label>
+                <input class="email" type="email" name="email" id="ie-mail" required placeholder="Digite seu e-mail">
+            </div>
+            <div>
+                <label for="isen">
+                <img class="senha">
+                </label>
+                <input class="senha" type="password" name="password" id="isen" required placeholder="Digite sua senha">
+            </div>
+            <input id="logar" type="submit" value="Logar">
+        </form>
+        <!-- Fim do formulário -->
+    </main>
+</body>
+</html>

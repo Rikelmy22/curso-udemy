@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body {
+    height: 98vh;
+    width: 98vw;
+    background: purple url(../imagens/fundo.jpg) center center no-repeat;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+#container {
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff3d;
+    border-radius: 10px;
+    margin: 150px auto 0px auto;
+    text-align: center;
+}
+
+#container > #imagem > img {
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+}
+
+form {
+    margin-top: 30px;
+    position: relative;
+}
+
+form > div > input {
+    width: 80%;
+    height: 30px;
+    font-size: 1.1em;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: none;
+}
+
+input.email {
+    background-image: url(../imagens/icone-usuario.png) ;
+}
+
+input.senha {
+    background-image: url(../imagens/icone-cadeado.png);
+}
+
+input[type="submit"] {
+    background-color: orange;
+    width: 91%;
+    height: 40px;
+    font-size: 1.1em;
+    color: #fff;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    transform: translateX(2px);
+}
+/*
+Transform com a propriedade transalateX para mover o seletor a direita centralizando-o.
+*/
