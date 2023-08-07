@@ -17,6 +17,7 @@ body {
     text-transform: uppercase;
     padding: 0.9em;
     border-radius: 3px;
+    letter-spacing: 4px;/*Espaçamento entre as letras do arquivo html*/
     position: absolute;
     top: 50%;
     left: 50%;
