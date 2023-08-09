@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius e box-sizing</title>
+    <style>
+        #caixa-1 {
+            height: 300px;
+            width: 300px;
+            background: #b9c941;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            /*A propriedade box-sizing assimila o padding ou qualquer medida interna como parte da anatomia da caixa e não como um valor a ser acrescido a caixa. Assim a caixa mantém a medida de tamanho inicial, mas responde as configurações internas normalmente. O valor para essa confoiguração é o border-box*/
+        }
+
+        #caixa-2 {
+            height: 300px;
+            width: 300px;
+            background: #b9c941;
+            border-radius: 5px;
+            /*O border-radius nada mas é do que o arredondamento das bordas da caixa.*/
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa-1">
+        <h1>Hello word</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptate nam distinctio, vitae laudantium facere doloremque repellendus quos rem nostrum accusamus assumenda id? Quis velit necessitatibus odit minus illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio expedita minima possimus iusto est repellendus, praesentium, nobis exercitationem dignissimos impedit omnis deleniti sunt culpa totam molestias architecto cumque aspernatur harum.</p>
+    </div>
+    <div id="caixa-2">
+        <h1>Hello word</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptate nam distinctio, vitae laudantium facere doloremque repellendus quos rem nostrum accusamus assumenda id? Quis velit necessitatibus odit minus illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio expedita minima possimus iusto est repellendus, praesentium, nobis exercitationem dignissimos impedit omnis deleniti sunt culpa totam molestias architecto cumque aspernatur harum.</p>
+    </div>
+</body>
+</html>
