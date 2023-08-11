@@ -1,0 +1,24 @@
+@keyframes caixa-animacao {
+    from {
+    background-color: blue;
+    border-radius: 0px;
+    }
+    to {
+    background-color: red;
+    border-radius: 400px;
+    top: 0px;
+    left: 0px;
+    top: 16em;
+    left: 16em;
+    }
+}
+
+#caixa {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    animation-name: caixa-animacao;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
