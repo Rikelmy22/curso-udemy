@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box (Caixa flexível)</title>
+    <style>
+        #container {
+            height: 100vh;
+            background: #dedede;
+            display: flex;
+            flex-direction: row;
+            /*ROW,ROW-REVERSE,COLUMN,COLUMN-REVERSE*/
+            flex-wrap: wrap;
+            /*NOWRAP,WRAP,WRAP-REVERSE*/
+            justify-content: space-around;
+            /*FLEX-START,FLEX-END,SPACE-BETWEN,SPACE-AROUND*/
+            align-items: center;
+            /*STRETCH,CENTER,FLEX-START,FLEX-END,BASELINE*/
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div class="item">00</div>
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </main>
+</body>
+</html>
