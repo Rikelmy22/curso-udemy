@@ -7,33 +7,69 @@
     <style>
         #container {
             height: 100vh;
+            width: 800px;
             background: #dedede;
             display: flex;
             flex-direction: row;
             /*ROW,ROW-REVERSE,COLUMN,COLUMN-REVERSE*/
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             /*NOWRAP,WRAP,WRAP-REVERSE*/
-            justify-content: space-around;
+            justify-content: space-between;
             /*FLEX-START,FLEX-END,SPACE-BETWEN,SPACE-AROUND*/
-            align-items: center;
+            align-items: flex-start;
             /*STRETCH,CENTER,FLEX-START,FLEX-END,BASELINE*/
         }
 
         .item {
-            width: 100px;
+            width: 200px;
             height: 100px;
             background: #fff;
             border: 1px solid #000;
         }
+        /*ORDER Ordem dos itens que seão apresentados na tela do navegadores. O item com valor negadtivo se posicionará no incício do container pois o valor padrão é zero*/
+        /*#ordem-00 {
+            order: 0;
+        }
+        #ordem-01 {
+            order: 2;
+        }
+        #ordem-02 {
+            order: 1;
+        }
+        #ordem-03 {
+            order: 4;
+        }
+        #ordem-04 {
+            order: -1;
+        }*/
+        /*FLEX-GROW que define a proporção de espaço ocupado por um item em relação ao container*/
+        /*#ordem-0 {
+            flex-grow: 3;
+        }
+
+        #ordem-02 {
+            flex-grow: 1;
+        }*/
+
+        /*FLEX-SHRINK define a capacidade de redução dos elementos em um container para respeitar a largura da sua div pai*/
+        /*
+        .item-1 {
+            flex-shrink: 3;
+        }
+
+        .item-2 {
+            flex-shrink: 6;
+        }
+        */
     </style>
 </head>
 <body>
     <main id="container">
-        <div class="item">00</div>
-        <div class="item">01</div>
-        <div class="item">02</div>
-        <div class="item">03</div>
-        <div class="item">04</div>
+        <div class="item item-1" id="ordem-0">00</div>
+        <div class="item" id="ordem-01">01</div>
+        <div class="item item-2" id="ordem-02">02</div>
+        <div class="item" id="ordem-03">03</div>
+        <div class="item" id="ordem-04">04</div>
     </main>
 </body>
 </html>
